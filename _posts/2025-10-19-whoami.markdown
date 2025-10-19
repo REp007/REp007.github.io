@@ -1,0 +1,26 @@
+---
+layout: post
+title: "whomai ?"
+date: 2025-10-19 19:28:45 +0100
+categories: education journey
+---
+
+Hi everyone!
+
+I want to share a little bit about my school journey and how I got into tech. It's been a fun ride so far!
+
+[Image of a computer with code on the screen]
+
+### My First Big Step into Code
+
+[cite_start]My real coding adventure started at **ISTA TITT MELIL in Casablanca**[cite: 7]. [cite_start]From 2022 to 2024, I studied to become a Full-Stack Developer[cite: 7].
+
+What does "Full-Stack" mean? It's like learning how to build a whole house, not just paint the walls. I learned how to make websites look good on the outside (the frontend) and how to make them work correctly on the inside (the backend). It was super cool to see how everything connects to make a website work!
+
+### What I'm Doing Now: AI!
+
+[cite_start]Right now, I'm studying at **ESTC, also in Casablanca**[cite: 7]. [cite_start]I'm working on getting a Bachelor's Degree in Application Development and AI[cite: 7]. This is where things get really exciting!
+
+AI, or Artificial Intelligence, is all about making computers smart. I'm learning how to build apps that can think and learn. It feels like I'm learning about the future of technology, and it's a lot of fun.
+
+Every day I learn something new, and I can't wait to use these skills to build cool things. Thanks for reading my story!
