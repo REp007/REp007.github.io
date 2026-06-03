@@ -40,3 +40,9 @@ yarn-debug.log*
 /tmp/pids/*
 !/tmp/pids/
 !/tmp/pids/.keep
+
+# Astro
+dist/
+.astro/
+
+*.pdf
