@@ -1,10 +1,10 @@
 ---
 const name = "El-Amrani Youssef";
-const email = "el_amranii@outlook.com";
+const email = "iam.elamraniyoussef@gmail.com";
 const github = "https://github.com/REp007";
 const x = "https://x.com/Amr4nii";
-const cvUrl =
-  "#";
+const bsky = "https://bsky.app/profile/amr4ni.bsky.social";
+const linkedin = "https://www.linkedin.com/in/el-amrani-youssef";
 ---
 
 <!doctype html>
@@ -24,7 +24,7 @@ const cvUrl =
 
     <title>{name} — Développeur Full-Stack</title>
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Group 232.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,11 +40,9 @@ const cvUrl =
 
           document.documentElement.dataset.language = language;
           document.documentElement.lang = language;
-          document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
         } catch {
           document.documentElement.dataset.language = "fr";
           document.documentElement.lang = "fr";
-          document.documentElement.dir = "ltr";
         }
       })();
     </script>
@@ -52,7 +50,8 @@ const cvUrl =
 
   <body>
     <main class="hero">
-      <nav class="nav" aria-label="Navigation principale" data-navigation>
+      <div class="stage">
+      <nav class="nav" dir="ltr" aria-label="Navigation principale" data-navigation>
         <a class="brand" href="/" aria-label="Accueil El-Amrani Youssef">
           <img src="/assets/icone.svg" alt="" width="36" height="36" />
 
@@ -93,7 +92,7 @@ const cvUrl =
         </div>
       </nav>
 
-      <aside class="menu-panel" id="site-menu" data-menu-panel hidden>
+      <aside class="menu-panel" id="site-menu" dir="ltr" data-menu-panel hidden>
         <a href={`mailto:${email}`}>
           <span class="copy-fr">Me contacter</span>
           <span class="copy-ar" lang="ar" dir="rtl">تواصل معي</span>
@@ -103,10 +102,10 @@ const cvUrl =
 
         <a href={x} target="_blank" rel="noopener noreferrer">X / Twitter</a>
 
-        <a href={cvUrl} target="_blank" rel="noopener noreferrer">
+      <!--  <a href={bsky} target="_blank" rel="noopener noreferrer">
           <span class="copy-fr">Voir mon CV</span>
           <span class="copy-ar" lang="ar" dir="rtl">عرض السيرة الذاتية</span>
-        </a>
+        </a> -->
       </aside>
 
       <div class="accent-line accent-line-horizontal" aria-hidden="true"></div>
@@ -175,7 +174,7 @@ const cvUrl =
         </div>
       </section>
 
-      <footer class="socials" aria-label="Réseaux sociaux et liens" data-socials>
+      <footer class="socials" dir="ltr" aria-label="Réseaux sociaux et liens" data-socials>
         <a
           href={x}
           target="_blank"
@@ -188,7 +187,7 @@ const cvUrl =
               d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"
             />
           </svg> -->
-          <img src="/icons/x.svg" alt="X" width="24" height="24" />
+          <img src="/icons/x.svg" alt="X" width="18" height="18" />
         </a>
 
         <a href={`mailto:${email}`} aria-label="Envoyer un e-mail" title={email}>
@@ -197,7 +196,7 @@ const cvUrl =
               d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
             />
           </svg> -->
-          <img src="/icons/gmail.svg" alt="Gmail" width="24" height="24" />
+          <img src="/icons/gmail.svg" alt="Gmail" width="18" height="18" />
         </a>
 
         <a
@@ -212,19 +211,30 @@ const cvUrl =
               d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
             />
           </svg> -->
-          <img src="/icons/github.svg" alt="GitHub" width="24" height="24" />
+          <img src="/icons/github.svg" alt="GitHub" width="18" height="18" />
         </a>
 
         <a
-          href={cvUrl}
+          href={bsky}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Voir ou télécharger le CV"
+          aria-label="Bleusky"
           title="Bleusky"
         >
-          <img src="/icons/bluesky.svg" alt="Bluesky" width="24" height="24" />
+          <img src="/icons/bluesky.svg" alt="Bluesky" width="18" height="18" />
+        </a>
+
+        <a
+          href={linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="linkedin"
+          title="LinkedIn"
+        >
+          <img src="/icons/linkedin.svg" alt="LinkedIn" width="18" height="18" />
         </a>
       </footer>
+      </div>
     </main>
 
     <script is:inline>
@@ -292,7 +302,6 @@ const cvUrl =
 
           root.dataset.language = nextLanguage;
           root.lang = nextLanguage;
-          root.dir = nextLanguage === "ar" ? "rtl" : "ltr";
 
           document.title = translation.title;
           description?.setAttribute("content", translation.description);
@@ -452,9 +461,22 @@ const cvUrl =
   .hero {
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: stretch;
     min-height: 100svh;
     overflow: hidden;
     isolation: isolate;
+  }
+
+  .stage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: min(100%, 84rem);
+    min-height: 100svh;
+    margin: 0 auto;
+    padding-inline: clamp(1.25rem, 3vw, 2.5rem);
   }
 
   .hero::before {
@@ -464,13 +486,13 @@ const cvUrl =
     content: "";
     background:
       linear-gradient(90deg, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.22)),
-      url("/assets/background.jpg") center / cover no-repeat;
+      url("/assets/HNCBoh7bIAAlVCE.jpeg") center / cover no-repeat;
   }
 
-  html[dir="rtl"] .hero::before {
+  html[data-language="ar"] .hero::before {
     background:
       linear-gradient(-90deg, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.22)),
-      url("/assets/background.jpg") center / cover no-repeat;
+      url("/assets/HNCBoh7bIAAlVCE.jpeg") center / cover no-repeat;
   }
 
   .hero::after {
@@ -484,10 +506,15 @@ const cvUrl =
       linear-gradient(to bottom, rgba(5, 5, 5, 0.04), rgba(5, 5, 5, 0.68));
   }
 
-  html[dir="rtl"] .hero::after {
+  html[data-language="ar"] .hero::after {
     background:
       radial-gradient(circle at 18% 22%, rgba(183, 45, 50, 0.14), transparent 34%),
       linear-gradient(to bottom, rgba(5, 5, 5, 0.04), rgba(5, 5, 5, 0.68));
+  }
+
+  .nav,
+  .socials {
+    flex-direction: row;
   }
 
   .nav {
@@ -499,8 +526,9 @@ const cvUrl =
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     min-height: 5.6rem;
-    padding: 1.4rem clamp(1.2rem, 3.5vw, 3rem) 1rem;
+    padding: 1.4rem 0 1rem;
   }
 
   .brand {
@@ -638,23 +666,18 @@ const cvUrl =
   }
 
   .menu-panel {
-    position: fixed;
+    position: absolute;
     z-index: 50;
     top: 5.5rem;
-    right: clamp(1.2rem, 3.5vw, 3rem);
+    right: 0;
     display: grid;
-    width: min(19rem, calc(100vw - 2.4rem));
+    width: min(19rem, 100%);
     padding: 0.9rem;
     border: 1px solid var(--border);
     border-radius: 1rem;
     background: var(--surface);
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.42);
     backdrop-filter: blur(20px);
-  }
-
-  html[dir="rtl"] .menu-panel {
-    right: auto;
-    left: clamp(1.2rem, 3.5vw, 3rem);
   }
 
   .menu-panel[hidden] {
@@ -696,7 +719,7 @@ const cvUrl =
     width: clamp(4px, 0.65vw, 9px);
   }
 
-  html[dir="rtl"] .accent-line-vertical {
+  html[data-language="ar"] .accent-line-vertical {
     right: auto;
     left: 12%;
   }
@@ -705,9 +728,13 @@ const cvUrl =
     position: relative;
     z-index: 10;
     align-self: center;
-    width: min(78rem, calc(100% - 4rem));
-    margin: 0 clamp(1.25rem, 5vw, 5rem);
+    width: 100%;
+    margin: 0;
     padding: 9rem 0 8rem;
+  }
+
+  html[data-language="ar"] .intro {
+    direction: rtl;
   }
 
   .intro h1 {
@@ -819,25 +846,25 @@ const cvUrl =
   .socials {
     position: absolute;
     z-index: 30;
-    bottom: 1.2rem;
+    bottom: 0.45rem;
     left: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: clamp(0.45rem, 2vw, 1.4rem);
-    padding: 0.5rem;
+    gap: clamp(0.2rem, 1vw, 0.55rem);
+    padding: 0.18rem 0.28rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 999px;
     background: rgba(5, 5, 5, 0.44);
-    box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.28);
+    box-shadow: 0 0.5rem 1.4rem rgba(0, 0, 0, 0.28);
     backdrop-filter: blur(14px);
     transform: translateX(-50%);
   }
 
   .socials a {
     display: grid;
-    width: clamp(2.85rem, 4.3vw, 3.35rem);
-    height: clamp(2.85rem, 4.3vw, 3.35rem);
+    width: clamp(2rem, 3vw, 2.35rem);
+    height: clamp(2rem, 3vw, 2.35rem);
     border-radius: 50%;
     place-items: center;
     opacity: 0.86;
@@ -851,27 +878,31 @@ const cvUrl =
   .socials a:hover {
     background: rgba(255, 255, 255, 0.08);
     opacity: 1;
-    transform: translateY(-3px);
+    transform: translateY(-2px);
   }
 
   .socials img {
-    width: clamp(1.2rem, 1.8vw, 1.5rem);
-    height: clamp(1.2rem, 1.8vw, 1.5rem);
+    width: clamp(0.9rem, 1.35vw, 1.05rem);
+    height: clamp(0.9rem, 1.35vw, 1.05rem);
     fill: currentColor;
   }
 
   @media (max-width: 760px) {
+    .stage {
+      padding-inline: 1rem;
+    }
+
     .hero::before,
-    html[dir="rtl"] .hero::before {
+    html[data-language="ar"] .hero::before {
       background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.84)),
         url("/assets/background.jpg") center / cover no-repeat;
     }
 
     .nav {
-      position: fixed;
+      position: absolute;
       min-height: 4.9rem;
-      padding: 1rem 1rem 0.75rem;
+      padding: 1rem 0 0.75rem;
       background: linear-gradient(
         to bottom,
         rgba(5, 5, 5, 0.92),
@@ -921,14 +952,8 @@ const cvUrl =
 
     .menu-panel {
       top: 4.8rem;
-      right: 1rem;
-      left: 1rem;
-      width: auto;
-    }
-
-    html[dir="rtl"] .menu-panel {
-      right: 1rem;
-      left: 1rem;
+      right: 0;
+      width: min(19rem, 100%);
     }
 
     .accent-line-horizontal {
@@ -941,14 +966,12 @@ const cvUrl =
       width: 5px;
     }
 
-    html[dir="rtl"] .accent-line-vertical {
+    html[data-language="ar"] .accent-line-vertical {
       right: auto;
       left: 8%;
     }
 
     .intro {
-      width: auto;
-      margin: 0 1.25rem;
       padding: 8.4rem 0 8rem;
     }
 
@@ -995,20 +1018,20 @@ const cvUrl =
     }
 
     .socials {
-      bottom: 0.85rem;
+      bottom: 0.35rem;
       max-width: calc(100% - 1.5rem);
-      gap: clamp(0.25rem, 1.8vw, 0.65rem);
-      padding: 0.4rem;
+      gap: clamp(0.15rem, 1.2vw, 0.4rem);
+      padding: 0.14rem 0.22rem;
     }
 
     .socials a {
-      width: clamp(2.8rem, 12vw, 3.15rem);
-      height: clamp(2.8rem, 12vw, 3.15rem);
+      width: clamp(1.9rem, 9vw, 2.2rem);
+      height: clamp(1.9rem, 9vw, 2.2rem);
     }
 
-    .socials svg {
-      width: 1.32rem;
-      height: 1.32rem;
+    .socials img {
+      width: 0.95rem;
+      height: 0.95rem;
     }
   }
 
@@ -1033,17 +1056,17 @@ const cvUrl =
     }
 
     .intro {
-      margin: 0 1rem;
+      margin: 0;
     }
 
     .socials a {
-      width: 2.65rem;
-      height: 2.65rem;
+      width: 1.85rem;
+      height: 1.85rem;
     }
 
-    .socials svg {
-      width: 1.18rem;
-      height: 1.18rem;
+    .socials img {
+      width: 0.88rem;
+      height: 0.88rem;
     }
   }
 
@@ -1070,7 +1093,7 @@ const cvUrl =
     }
 
     .socials {
-      bottom: 0.7rem;
+      bottom: 0.3rem;
     }
   }
 
